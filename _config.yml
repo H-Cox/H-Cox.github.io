@@ -24,7 +24,7 @@ github_username:  H-Cox
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-hydeout
+theme: jekyll-theme-minimal
 plugins:
   - jekyll-feed
 
