@@ -4,7 +4,7 @@ description: > # this means to ignore newlines until "baseurl:"
   This site contains blog posts about my projects in research, data science, machine learning and more...
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://henrycox.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
@@ -16,14 +16,14 @@ about-author: I am PhD student at the University of Manchester working on Biolog
 social-twitter: # add your Twitter handle
 social-facebook: # add your Facebook handle
 social-github: h-cox # add your Github handle
-social-linkedin: # add your Linkedin handle
+social-linkedin: henryfcox # add your Linkedin handle
 social-email: henryfcox@live.com # add your Email address
 
 # Disqus
 discus-identifier: # add your discus identifier
 
 # Tracker
-analytics: # Google Analytics
+analytics: UA-117678824-1 # Google Analytics
 
 # Build Settings
 markdown: kramdown
