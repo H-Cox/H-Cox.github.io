@@ -1,41 +1,38 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Henry Cox
-email: henryfcox@live.com
-description: >- # this means to ignore newlines until "baseurl:"
-  This website is going to contain some of the things I have done....
+title: Hello, world! I'm Henry Cox
+description: > # this means to ignore newlines until "baseurl:"
+  I am PhD student at the University of Manchester working on Biological Physics. 
+  This site contains blog posts about my projects in research, data science, machine learning and more...
+permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: henryfcox
-github_username:  H-Cox
+site-twitter: #if your site has a twitter account, enter it here
 
-# Build settings
+# Author Settings
+author: Henry Cox # add your name
+author-img: Henry-Cox.jpg # add your photo
+about-author: I am PhD student at the University of Manchester working on Biological Physics. 
+    
+    # add description
+social-twitter: # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: h-cox # add your Github handle
+social-linkedin: # add your Linkedin handle
+social-email: henryfcox@live.com # add your Email address
+
+# Disqus
+discus-identifier: # add your discus identifier
+
+# Tracker
+analytics: # Google Analytics
+
+# Build Settings
 markdown: kramdown
-theme: jekyll-theme-minimal
 plugins:
-  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
