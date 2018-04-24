@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Hello world!
+title: Hello, world!
 date: 2018-04-16 00:00:00 +0300
 description: 
 img: peaks.jpg
 tags: [about, CV]
 ---
 
-Hello world!
+Hello, world!
 
 I am currently in my third year of a Biological Physics PhD at the University of Manchester, using state-of-the-art microscopy techniques to further the understanding of peptide self-assembly. My work is important as peptide self-assembly is thought to be involved in the development of horrible diseases such as Alzheimer's and Parkinson's, also the structures formed by self-assembling peptides have good potential to be used as medicine themselves; in wound healing, drug delivery or as anti-microbial agents. I have created this site to help me share more detailed information about some of the work I have done academically but also some personal projects that I have going.
 
