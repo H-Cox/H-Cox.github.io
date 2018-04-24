@@ -1,21 +1,21 @@
 ---
 layout: post
 title: Python and SQL
-date: 2018-04-19 00:00:00 +0300
-description: 
+date: 2018-04-23 00:00:00 +0300
+description: How to get started using SQL with Python.
 img: flight.jpg
 tags: [Meetup's, Python, SQL]
 ---
 
-On Thursday 19th Feb I attended my first meetup event from the [Python North West User group][PyNW group]. The material of this session was focussed on SQL and featured a presentation and live demo of how SQL can be used with Python, delivered by [Dave Jones][DJ GitHub]. This was particularly good as you got hands on with the code, with Dave leading the way to ensure everything works. Here I have written a brief write up of the main points from the meetup and some of the SQL that we went through.
+On Thursday 19th Feb I attended my first meetup event from the [Python North West User group][PyNW group]. The material of this session was focussed on SQL and featured a presentation and live demo of how SQL can be used with Python, delivered by [Dave Jones][DJ GitHub]. This was particularly good as you got hands-on with the code, with Dave leading the way to ensure everything worked. Here I have written a brief write up of the main points from the meetup and some of the SQL that we went through.
 
 #### So what is SQL?
 
-[SQL][SQL wiki], which stands for Structured Query Language, has been around a long time and has been an ISO standard since the 1980’s. It is a language which is used for managing data in relational databases and is very widely used - such as to run everyones bank accounts. Practically speaking, as it is old the standard is not followed universally and there are a number of different ways of running SQL. Furthermore, there have been a number of attempts to replace it, however it is still the de-facto standard. 
+[SQL][SQL wiki], which stands for Structured Query Language, has been around a long time and has been an ISO standard since the 1980’s. It is a language which is used for managing data in relational databases and is very widely used - such as to run everyone's bank accounts. Practically speaking, as it is old the standard is not followed universally and there are a number of different ways of running SQL. Furthermore, there have been a number of attempts to replace it, however it is still the de-facto standard. 
 
 #### Using SQL with Python
 
-In Python there are many different libraries for interfacing with SQL, but they can be badly designed and too variable/low-level to be useful. Dave recommended the libraries SQLAlchemy and Pandas to do the bulk of the work. Once you have them installed you can load up a terminal window and enter the following to create a new SQL engine using SQLAlchemy.
+In Python, there are many different libraries for interfacing with SQL, but they can be badly designed and too variable/low-level to be useful. Dave recommended the libraries SQLAlchemy and Pandas to do the bulk of the work. Once you have them installed you can load up a terminal window and enter the following to create a new SQL engine using SQLAlchemy.
 
 {% highlight python %}
 import sqlalchemy as sa
@@ -38,7 +38,7 @@ c.execute(sql)
 
 #### Creating a table
 
-In the session Dave used the example of a flight data recording system. First things first you will want to create a table to store the data. The sql command that you would pass is as follows.
+In the session, Dave used the example of a flight data recording system. First things first you will want to create a table to store the data. The SQL command that you would pass is as follows.
 
 {% highlight sql %}
 CREATE TABLE readings (
@@ -60,7 +60,7 @@ Here we have created a table called "readings", with multiple columns titled "fi
 
 Firstly, we must specify a PRIMARY KEY, which is a unique identifier for each row in the table. This is very important as the order of rows in the table is not fixed and SQL can move them around a bit, therefore a key for each row is necessary. In our case, the key for each row is a combination of the flight and ts columns - i.e. each row must have a unique combination of timestamp and flight number. So a single flight cannot record twice on the same timestamp, which makes sense.
 
-Next we constrain some of the data, specifically the temperature, pressure and humidity measurements to ensure they are physical.
+Next, we constrain some of the data, specifically the temperature, pressure and humidity measurements to ensure they are physical.
 
 So to actually run this command in the terminal we simply paste the SQL into a string and then pass that to SQLAlchemy.
 
@@ -85,7 +85,7 @@ c.execute(sql)
 
 #### Inserting data
 
-We can insert data into this table using the following sql commands.
+We can insert data into this table using the following SQL commands.
 
 {% highlight sql %}
 INSERT INTO readings(flight, ts, temp, pressure, humidity)
@@ -104,7 +104,7 @@ SELECT flight, DATETIME(ts, '+3 minutes') AS ts, temp,
 FROM readings;
 {% endhighlight %}
 
-In the final line we query the table and then insert new lines which are shifted along in time by 3 minutes.
+In the final line, we query the table and then insert new lines which are shifted along in time by 3 minutes.
 
 #### Viewing the data
 
@@ -115,7 +115,7 @@ pd.set_option('display.width', 120)
 pd.read_sql('readings', c)
 {% endhighlight %}
 
-If you have insert all the lines into the table by running the SQL commands detailed above then you should see a six line table as the result.
+If you have inserted all the lines into the table by running the SQL commands detailed above then you should see a six-line table as the result.
 
 {% highlight bash %}
       flight                  ts  temp  pressure  humidity  accel_x  accel_y  accel_z
@@ -129,7 +129,7 @@ If you have insert all the lines into the table by running the SQL commands deta
 
 #### Working with a lot of data
 
-Everytime we run the execute command we make a transaction with the database and all the changes are immediately written to the database file. This makes transactions computationally expensive and therefore when working with a lot of data it is best to group data together and perform them in one transaction. If you have a data set that is in a .csv file then a quick way to import it all into the table is as follows.
+Every time we run the execute command we make a transaction with the database and all the changes are immediately written to the database file. This makes transactions computationally expensive and therefore when working with a lot of data it is best to group data together and perform them in one transaction. If you have a dataset that is in a .csv file then a quick way to import it all into the table is as follows.
 
 {% highlight python %}
 def load_data(filename):
@@ -156,9 +156,9 @@ You can also see the [to_sql()][Pandas to_sql] method in Pandas. You have to be 
 
 #### Saving the data
 
-One query I had during the meetup was how to save the data. Well, as I mentioned before, each transaction with the database saves everything to hard disk. Therefore, you should see a 'flight.db' file in the directory you have been working in. Dave reassured us that these files are hard to corrupt or damage, which is handy given all the important data companies store in them.
+One query I had during the meetup was how to save the data. Well, as I mentioned before, each transaction with the database saves everything to hard disk. Therefore, you should see a 'newdatabase.db' file in the directory you have been working in. Dave reassured us that these files are hard to corrupt or damage, which is handy given all the important data companies store in them.
 
-I hope that this post has helped some of you appreciate how easily you can get a database set up in SQL. I am looking to getting some more hands on experience of it in the future. If you have any comments or corrections to this post then please [let me know][my email].
+I hope that this post has helped some of you appreciate how easily you can get a database set up in SQL. I am looking to getting some more hands-on experience of it in the future. If you have any comments or corrections to this post then please [let me know][my email].
 
 Photo: Taken on Air New Zealand flight NZ001 over Washington, USA.
 
