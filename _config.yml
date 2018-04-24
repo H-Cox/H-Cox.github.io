@@ -26,12 +26,11 @@ discus-identifier: # add your discus identifier
 analytics: UA-117678824-1 # Google Analytics
 
 # Build Settings
-markdown: redcarpet
+markdown: kramdown
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
-  - redcarpet
 
 paginate: 8
 paginate_path: "/page/:num"

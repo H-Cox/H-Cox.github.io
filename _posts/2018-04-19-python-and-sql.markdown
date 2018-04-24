@@ -17,30 +17,30 @@ On Thursday 19th Feb I attended my first meetup event from the [Python North Wes
 
 In Python there are many different libraries for interfacing with SQL, but they can be badly designed and too variable/low-level to be useful. Dave recommended the libraries SQLAlchemy and Pandas to do the bulk of the work. Once you have them installed you can load up a terminal window and enter the following to create a new SQL engine using SQLAlchemy.
 
-```python
+{% highlight python %}
 import sqlalchemy as sa
 import pandas as pd
 engine = sa.create_engine('sqlite:///newdatabase.db')
-```
+{% endhighlight %}
 
 Then you can connect to it with
 
-```python
+{% highlight python %}
 c = engine.connect()
-```
+{% endhighlight %}
 
 Now you are ready to start creating the powerful relational databases which are possible with SQL. This makes use of the engine [SQLite][SQLite link], which comes bundled in Python. To speak to the engine you then write your SQL commands into a string and pass them into the engine for execution.
 
-```python
+{% highlight python %}
 sql = """ SQL commands here """
 c.execute(sql)
-```
+{% endhighlight %}
 
 #### Creating a table
 
 In the session Dave used the example of a flight data recording system. First things first you will want to create a table to store the data. The sql command that you would pass is as follows.
 
-```sql
+{% highlight sql %}
 CREATE TABLE readings (
     flight    VARCHAR(10) NOT NULL,
     ts        TIMESTAMP NOT NULL,
@@ -50,12 +50,11 @@ CREATE TABLE readings (
     accel_x   REAL DEFAULT 0 NOT NULL,
     accel_y   REAL DEFAULT 0 NOT NULL,
     accel_z   REAL DEFAULT 0 NOT NULL,
-
     CONSTRAINT readings_pk PRIMARY KEY (flight, ts),
     CONSTRAINT temp_ck CHECK (temp BETWEEN -70 AND 70),
     CONSTRAINT pres_ck CHECK (pressure BETWEEN 0 AND 2000),
     CONSTRAINT hum_ck CHECK (humidity BETWEEN 0 AND 100)
-```
+{% endhighlight %}
 
 Here we have created a table called "readings", with multiple columns titled "fight", "ts", "temp", etc. For each column we specify a data-type, e.g. TIMESTAMP must be a time/date, and NUMERIC, is a number. You can read more about data types [here][SQL data types]. We also specify that each column cannot contain a NULL value, this is good practice and ensures that data must be entered into each column to create a new row. Finally, and perhaps most importantly, we can apply constraints to the data. 
 
@@ -65,7 +64,7 @@ Next we constrain some of the data, specifically the temperature, pressure and h
 
 So to actually run this command in the terminal we simply paste the SQL into a string and then pass that to SQLAlchemy.
 
-```python
+{% highlight python %}
 sql = """ 
 CREATE TABLE readings (
     flight    VARCHAR(10) NOT NULL,
@@ -76,20 +75,19 @@ CREATE TABLE readings (
     accel_x   REAL DEFAULT 0 NOT NULL,
     accel_y   REAL DEFAULT 0 NOT NULL,
     accel_z   REAL DEFAULT 0 NOT NULL,
-
     CONSTRAINT readings_pk PRIMARY KEY (flight, ts),
     CONSTRAINT temp_ck CHECK (temp BETWEEN -70 AND 70),
     CONSTRAINT pres_ck CHECK (pressure BETWEEN 0 AND 2000),
     CONSTRAINT hum_ck CHECK (humidity BETWEEN 0 AND 100)
 """
 c.execute(sql)
-```
+{% endhighlight %}
 
 #### Inserting data
 
 We can insert data into this table using the following sql commands.
 
-```sql
+{% highlight sql %}
 INSERT INTO readings(flight, ts, temp, pressure, humidity)
 VALUES ('hab1', '2015-01-01 09:00:00', 25.5, 1020, 40);
 
@@ -104,7 +102,7 @@ INSERT INTO readings
 SELECT flight, DATETIME(ts, '+3 minutes') AS ts, temp,
        pressure, humidity, accel_x, accel_y, accel_z
 FROM readings;
-```
+{% endhighlight %}
 
 In the final line we query the table and then insert new lines which are shifted along in time by 3 minutes.
 
@@ -112,14 +110,14 @@ In the final line we query the table and then insert new lines which are shifted
 
 To view the data we can use Pandas (we change the display options so that it fits on the page better). 
 
-```python
+{% highlight python %}
 pd.set_option('display.width', 120)
 pd.read_sql('readings', c)
-```
+{% endhighlight %}
 
 If you have insert all the lines into the table by running the SQL commands detailed above then you should see a six line table as the result.
 
-```bash
+{% highlight bash %}
       flight                  ts  temp  pressure  humidity  accel_x  accel_y  accel_z
 0   hab1 2015-01-01 09:00:00  25.5      1020        40        0        0        0
 1   hab1 2015-01-01 09:01:00  25.5      1019        40        0        0        0
@@ -127,13 +125,13 @@ If you have insert all the lines into the table by running the SQL commands deta
 3   hab1 2015-01-01 09:03:00  25.5      1020        40        0        0        0
 4   hab1 2015-01-01 09:04:00  25.5      1019        40        0        0        0
 5   hab1 2015-01-01 09:05:00  25.5      1019        41        0        0        0
-```
+{% endhighlight %}
 
 #### Working with a lot of data
 
 Everytime we run the execute command we make a transaction with the database and all the changes are immediately written to the database file. This makes transactions computationally expensive and therefore when working with a lot of data it is best to group data together and perform them in one transaction. If you have a data set that is in a .csv file then a quick way to import it all into the table is as follows.
 
-```python
+{% highlight python %}
 def load_data(filename):
     insert = """
         INSERT INTO readings
@@ -152,9 +150,9 @@ def load_data(filename):
     with c.begin():
         c.execute("DELETE FROM readings")
         c.execute(insert, data)
-```
+{% endhighlight %}
 
-You can also see the ```to_sql()``` method in Pandas. You have to be careful when inserting large amounts of data to ensure you do not leave yourself vulnerable to [SQL injection][SQL inject].
+You can also see the [to_sql()][Pandas to_sql] method in Pandas. You have to be careful when inserting large amounts of data to ensure you do not leave yourself vulnerable to [SQL injection][SQL inject].
 
 #### Saving the data
 
@@ -167,5 +165,6 @@ I hope that this post has helped some of you appreciate how easily you can get a
 [SQL wiki]: https://en.wikipedia.org/wiki/SQL
 [SQLite link]: https://www.sqlite.org/index.html
 [SQL data types]: https://www.w3schools.com/sql/sql_datatypes.asp
+[Pandas to_sql]: https://pandas.pydata.org/pandas-docs/stable/generated/pandas.DataFrame.to_sql.html
 [SQL inject]: https://www.w3schools.com/sql/sql_injection.asp
 [my email]: mailto:henryfcox@live.com
