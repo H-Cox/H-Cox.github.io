@@ -160,6 +160,8 @@ One query I had during the meetup was how to save the data. Well, as I mentioned
 
 I hope that this post has helped some of you appreciate how easily you can get a database set up in SQL. I am looking to getting some more hands on experience of it in the future. If you have any comments or corrections to this post then please [let me know][my email].
 
+Photo: Taken on Air New Zealand flight NZ001 over Washington, USA.
+
 [PyNW group]: https://www.meetup.com/Python-North-West-Meetup/
 [DJ GitHub]: https://github.com/waveform80/
 [SQL wiki]: https://en.wikipedia.org/wiki/SQL
