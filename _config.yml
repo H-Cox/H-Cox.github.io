@@ -1,4 +1,4 @@
-title: Hello, world! I'm Henry Cox
+title: Henry Cox
 description: > # this means to ignore newlines until "baseurl:"
   I am PhD student at the University of Manchester working on Biological Physics. 
   This site contains blog posts about my projects in research, data science, machine learning and more...
@@ -26,11 +26,12 @@ discus-identifier: # add your discus identifier
 analytics: UA-117678824-1 # Google Analytics
 
 # Build Settings
-markdown: kramdown
+markdown: redcarpet
 plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+  - redcarpet
 
 paginate: 8
 paginate_path: "/page/:num"
