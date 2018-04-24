@@ -4,7 +4,7 @@ title: Hello, world!
 date: 2018-04-16 00:00:00 +0300
 description: 
 img: peaks.jpg
-tags: [about, CV]
+tags: [About, CV]
 ---
 
 Hello, world!
