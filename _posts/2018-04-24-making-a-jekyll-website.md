@@ -85,7 +85,7 @@ git push
 
 You should now be able to go on your internet browser and go to https://username.github.io, where you replace username with your GitHub username and see the site in action.
 
-#### Using custom domain name
+#### Using a custom domain name
 
 To add an extra element of professionalism to your new website you might want to register a custom domain name which people can use to access your site. This is the only part you will need to spend money on, however it is not that expensive. There are many different domain name registration services out there, the one I used was <https://www.namecheap.com>. 
 
