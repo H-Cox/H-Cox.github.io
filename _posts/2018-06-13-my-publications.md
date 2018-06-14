@@ -4,7 +4,7 @@ title: My Publications
 date: 2018-06-13 00:00:00 +0300
 description: Details of my academic publications
 img: marmenor.jpg
-tags: [CV, Research, Physics]
+tags: [About, CV, Physics, Research]
 ---
 
 I will keep this page updated with the details of my published academic work.
