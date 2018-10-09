@@ -68,16 +68,15 @@ Other cleaning operations typically involve removing data points which have unph
 
 The final step is to form the final image, and typically this is done by generating a grid over our sample. Then we count how many localisations are in each square of the grid, this then becomes the brightness of the square. As shown in the "Reconstruction" part of the [STORM Eiffel Tower video][youtube-blinking].
 
-<div style="text-align:center"><img src ="{{site.baseurl}}/assets/img/STORM/StandardvsStorm.pdf"/></div>
+<div style="text-align:center"><img src ="{{site.baseurl}}/assets/img/STORM/StandardvsSTORM.pdf"/></div>
 
 Above is an image taken from one of my samples I use in my PhD, the synthetic peptide I<sub>3</sub>K, which forms long thin fibrils. As you can see the STORM image is much clearer and we can see what is going on in the images much better. Furthermore, the background in the STORM images is almost zero, which is due to the specific nature of the fitting and post-processing which only allows localisations through which meet certain criteria.
 
-If you got this far, I hope it made sense as it is quite a complicated procedure. If you have any further questions then feel free to get [in touch][my email].
-
-
+If you got this far, I hope it made sense as it is quite a complicated procedure. It is no doubt going to continue to improve over the next few years and even now some groups are reporting hitting [less than 5 nm resolution][less than 5nm] using even more advanced labelling and post-processing techniques. If you have any further questions then feel free to get [in touch][my email].
 
 
 [diffraction]:https://isaacphysics.org/concepts/cp_diffraction
 [super-res wiki]:https://en.wikipedia.org/wiki/Super-resolution_microscopy
 [youtube-blinking]:https://www.youtube.com/watch?v=RE70GuMCzww
 [my email]:mailto:henryfcox@live.com
+[less than 5nm]: https://www.nature.com/articles/s41592-018-0136-6
