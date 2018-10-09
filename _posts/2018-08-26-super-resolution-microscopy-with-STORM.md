@@ -78,5 +78,5 @@ If you got this far, I hope it made sense as it is quite a complicated procedure
 [diffraction]:https://isaacphysics.org/concepts/cp_diffraction
 [super-res wiki]:https://en.wikipedia.org/wiki/Super-resolution_microscopy
 [youtube-blinking]:https://www.youtube.com/watch?v=RE70GuMCzww
-[my email]:mailto:henryfcox@live.com
+[my email]:https://twitter.com/henryfcox
 [less than 5nm]: https://www.nature.com/articles/s41592-018-0136-6
