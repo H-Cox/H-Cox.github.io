@@ -7,7 +7,7 @@ img: microscope.jpg
 tags: [CV, Physics, Research]
 ---
 
-Over the past three years I have done a lot of super-resolution imaging using the STORM microscope that was built in the Photon Science Institute at the University of Manchester.
+Over the past three years I have done a lot of super-resolution imaging using the STORM microscope that was built in the Photon Science Institute at the University of Manchester. In this post I describe how the technique works and the general process that goes in to each super-resolution image.
 
 ### The diffraction limit and the need for super-resolution
 
