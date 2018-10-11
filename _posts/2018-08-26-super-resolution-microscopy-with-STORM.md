@@ -7,7 +7,7 @@ img: microscope.jpg
 tags: [CV, Physics, Research]
 ---
 
-Over the past three years I have done a lot of super-resolution imaging using the STORM microscope that was built in the Photon Science Institute at the University of Manchester. In this post I describe how the technique works and the general process that goes in to each super-resolution image.
+Over the past three years I have completed a lot of super-resolution imaging using the STORM microscope that was built in the Photon Science Institute at the University of Manchester. In this post I describe how the technique works and the general process that goes in to each super-resolution image.
 
 ### The diffraction limit and the need for super-resolution
 
@@ -21,7 +21,7 @@ The diffraction limit for some of the most state-of-the-art microscope lenses op
 
 With the advent of modern computing power and image processing techniques super-resolution imaging has been born to attempt to beat the classical diffraction limit.
 
-All of these techniques rely on careful control of the fluorescent dyes which we use to label our samples and see them under the microscope. The wikipedia article on [super-resolution imaging][super-res wiki] has a lot more information on the different techniques out there but we will focus on STORM.
+All of these techniques rely on careful control of the fluorescent dyes which we use to label our samples and see them under the microscope. This [review article][super-res review] has a lot more information on the different techniques out there but we will focus on STORM.
 
 ### STORM
 
@@ -56,7 +56,7 @@ This step is the "particle detection" part of the [STORM Eiffel Tower video][you
 
 <div style="text-align:center"><img src ="{{site.baseurl}}/assets/img/STORM/STORMFit.pdf"/></div>
 
-As an example, I have have fit the localisation above by taking the pixel values along the blue line in the image. The raw data is fit with a Gaussian profile and finds the location of the dye that created the blink with sub-pixel resolution, i.e. at pixel 6.25 with an error of 0.13 pixels. The pixels on our camera are 130 nm in size so therefore the error is approximately 17 nm.
+As an example, I have fit the localisation above by taking the pixel values along the blue line in the image. The raw data is fit with a Gaussian profile and finds the location of the dye that created the blink with sub-pixel resolution, i.e. at pixel 6.25 with an error of 0.13 pixels. The pixels on our camera are 130 nm in size so therefore the error is approximately 17 nm.
 
 #### 4. Cleaning the data
 
@@ -76,7 +76,7 @@ If you got this far, I hope it made sense as it is quite a complicated procedure
 
 
 [diffraction]:https://isaacphysics.org/concepts/cp_diffraction
-[super-res wiki]:https://en.wikipedia.org/wiki/Super-resolution_microscopy
+[super-res review]:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2835776/
 [youtube-blinking]:https://www.youtube.com/watch?v=RE70GuMCzww
-[my email]:https://twitter.com/henryfcox
+[my email]:mailto:henryfcox@live.com
 [less than 5nm]: https://www.nature.com/articles/s41592-018-0136-6
