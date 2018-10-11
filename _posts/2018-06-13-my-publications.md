@@ -10,7 +10,7 @@ tags: [About, CV, Physics, Research]
 I will keep this page updated with the details of my published academic work.
 
 ### Self-assembly of mesoscopic peptide surfactant fibrils investigated by STORM super-resolution fluorescence microscopy
-Henry Cox, Pantelis Georgiades, Hai Xu, Thomas A. Waigh, and Jian R. Lu, *Biomacromolecules*, **2017**, *18* (11), pp 3481–3491
+<b>Henry Cox</b>, Pantelis Georgiades, Hai Xu, Thomas A. Waigh, and Jian R. Lu, *Biomacromolecules*, **2017**, *18* (11), pp 3481–3491
 
 **DOI:** [10.1021/acs.biomac.7b00465][STORM article]
 
@@ -21,12 +21,12 @@ As part of this work I got my first taste of working with large data sets. STORM
 ### Other articles
 
 #### Hydrogelation of the Short Self-Assembling Peptide I3QGK Regulated by Transglutaminase and Use for Rapid Hemostasis
-Cuixia Chen, Yu Zhang, Rui Fei, Changhai Cao, Meng Wang, Jingxin Wang, Jingkun Bai, Henry Cox, Thomas Waigh, Jian R. Lu, and Hai Xu, *ACS Appl. Mater. Interfaces*, **2016**, *8* (28), pp 17833–17841
+Cuixia Chen, Yu Zhang, Rui Fei, Changhai Cao, Meng Wang, Jingxin Wang, Jingkun Bai, <b>Henry Cox</b>, Thomas Waigh, Jian R. Lu, and Hai Xu, *ACS Appl. Mater. Interfaces*, **2016**, *8* (28), pp 17833–17841
 
 **DOI:** [10.1021/acsami.6b04939][I3QGK]
 
 #### Enzymatic Regulation of Self-Assembling Peptide A9K2 Nanostructures and Hydrogelation with Highly Selective Antibacterial Activities
-Jingkun Bai, Cuixia Chen, Jingxin Wang, Yu Zhang, Henry Cox, Jing Zhang, Yuming Wang, Jeffrey Penny, Thomas Waigh, Jian R. Lu, and Hai Xu, *ACS Appl. Mater. Interfaces*, **2016**, *8* (24), pp 15093–15102
+Jingkun Bai, Cuixia Chen, Jingxin Wang, Yu Zhang, <b>Henry Cox</b>, Jing Zhang, Yuming Wang, Jeffrey Penny, Thomas Waigh, Jian R. Lu, and Hai Xu, *ACS Appl. Mater. Interfaces*, **2016**, *8* (24), pp 15093–15102
 
 **DOI:** [10.1021/acsami.6b03770][Enzymatic reg]
 

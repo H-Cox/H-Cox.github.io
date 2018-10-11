@@ -15,7 +15,7 @@ If you are interested in my academic work then I recommend you have a look at my
 
 I began my PhD with no real programming experience, however over the course of the last three years I have written and used hundreds of MatLab scripts to perform advanced modelling and analysis of the data I have collected. Often involving combining data from multiple sources, and performing complex image analysis. This has given me a taste for developing my skills further and so I have begun to write small programs, primarily in python, to help hone my skills. Most of these are uploaded to my [GitHub page][GitHub] and I plan to rewrite some of these (potentially in ruby and with TDD techniques) in future.
 
-Look out for more detailed posts about specific aspects of my PhD and personal projects in the future. If you are interested you can also take a look at my [CV](../CV.pdf).
+Look out for more detailed posts about specific aspects of my PhD and personal projects in the future. If you are interested you can also take a look at my [CV](../CV-Henry-Cox-2018-10.pdf).
 
 Thanks for reading!
 
