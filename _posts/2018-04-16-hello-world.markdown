@@ -5,6 +5,7 @@ date: 2018-04-16 00:00:00 +0300
 description: A post about me and about his website.
 img: peaks.jpg
 tags: [About, CV]
+caption: Looking out towards the Peak District National Park from the 6th floor of the Schuster Building, University of Manchester.
 ---
 
 Hello, world!
@@ -18,8 +19,6 @@ I began my PhD with no real programming experience, however over the course of t
 Look out for more detailed posts about specific aspects of my PhD and personal projects in the future. If you are interested you can also take a look at my [CV](../CV-Henry-Cox-2018-10.pdf).
 
 Thanks for reading!
-
-Photo: Looking out towards the Peak District National Park from the 6th floor of the Schuster Building, University of Manchester.
 
 [STORM paper]: https://pubs.acs.org/doi/abs/10.1021/acs.biomac.7b00465
 [my email]: mailto:henryfcox@live.com

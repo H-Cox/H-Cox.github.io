@@ -5,6 +5,7 @@ date: 2018-04-24 00:00:00 +0300
 description: How to make a Jekyll site and host it for free on GitHub Pages.
 img: sedona.jpg
 tags: [CSS, HTML, Ruby, Markdown, About]
+caption: The red rocks of Sedona, Arizona, USA.
 ---
 
 This post details how I made this website using the static site generator [Jekyll][Jekyll link], then published it with a custom domain name and hosted it for free on [GitHub Pages][GH Pages link]. Overall, this process has been excellent for me to get more familiar with how websites are made as well as with the HTML, CSS and markup languages. Furthermore, as I now have a platform to make content that is my own, it has helped and will help me to reinforce the learning experiences I have, as teaching something is a great way to learn it.
@@ -119,8 +120,6 @@ git merge development
 Now you just need to check everything is working as expected and then run the 'git push' command to implement the changes to the live site.
 
 I hope you have learned something from this post, if there are any mistakes then please let me know.
-
-Photo: The red rocks of Sedona, Arizona, USA.
 
 [Jekyll link]: https://jekyllrb.com
 [GH Pages link]: https://pages.github.com

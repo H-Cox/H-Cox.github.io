@@ -5,6 +5,7 @@ date: 2018-08-26 00:00:00 +0300
 description: An explanation of STORM super-resolution microscopy and how I have used it.
 img: microscope.jpg
 tags: [CV, Physics, Research]
+caption: Our lab in the Photon Science Institute, University of Manchester.
 ---
 
 Over the past three years I have completed a lot of super-resolution imaging using the STORM microscope that was built in the Photon Science Institute at the University of Manchester. In this post I describe how the technique works and the general process that goes in to each super-resolution image.
@@ -73,7 +74,6 @@ The final step is to form the final image, and typically this is done by generat
 Above is an image taken from one of my samples I use in my PhD, the synthetic peptide I<sub>3</sub>K, which forms long thin fibrils. As you can see the STORM image is much clearer and we can see what is going on in the images much better. Additionally, the background in the STORM images is almost zero, which is due to the specific nature of the fitting and post-processing which only allows localisations through which meet certain criteria.
 
 If you got this far, I hope it made sense as it is quite a complicated procedure. It is no doubt going to continue to improve over the next few years and even now some groups are reporting hitting [less than 5 nm resolution][less than 5nm] using even more advanced labelling and post-processing techniques. If you have any further questions then feel free to get [in touch][my email].
-
 
 [diffraction]:https://isaacphysics.org/concepts/cp_diffraction
 [super-res review]:https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2835776/

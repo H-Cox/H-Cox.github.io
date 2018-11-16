@@ -5,6 +5,7 @@ date: 2018-05-12 00:00:00 +0300
 description: My experiences with ruby and test driven development
 img: croatiaislands.jpg
 tags: [Ruby, TDD]
+caption: Islands near Zadar, Croatia
 ---
 
 Test driven development (TDD) and the programming language Ruby were both alien to me in October 2017. However, this changed when I began to be mentored by an experienced Software Developer who I found through the [Manchester Gold][Manchester gold] mentoring programme. Recently, we have discussed the basic principles of TDD, and other software development practices, and put them into practise with Ruby. 
@@ -43,8 +44,6 @@ Completing the bowling kata was more challenging which was certainly due to the 
 The main take-away for me was that I need more practice actually writing the tests. My solution to the bowling kata has 16 in total, and certainly a few of the ones I wrote could probably be removed or changed so that they are more efficient. Some of the solutions online only feature around 5 tests to ensure the code is working properly. Having said that, the tests I wrote were not all trivial, and having a set of tests to check the program operation did really make me appreciate how useful TDD would be in an environment where you need to keep updating or working on the code.
 
 Furthermore, I am glad that now I can descibe the basic principles behind modern software development and if I was put infront of a Kanban board I could describe the basic workflow and determine what the team was up to. I didn't realise that software development teams would be so team-orientated and this is a big positive for me as I enjoy working with people to solve problems.
-
-Photo: Islands near Zadar, Croatia
 
 [Manchester gold]:http://www.careers.manchester.ac.uk/experience/mentoring/mangold/
 [RB Koans]:http://rubykoans.com

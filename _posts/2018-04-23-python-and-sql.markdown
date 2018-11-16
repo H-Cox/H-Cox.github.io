@@ -5,6 +5,7 @@ date: 2018-04-23 00:00:00 +0300
 description: How to get started using SQL with Python.
 img: flight.jpg
 tags: [Meetup's, Python, SQL]
+caption: Taken on Air New Zealand flight NZ001 over Washington, USA.
 ---
 
 On Thursday 19th Feb I attended my first meetup event from the [Python North West User group][PyNW group]. The material of this session was focussed on SQL and featured a presentation and live demo of how SQL can be used with Python, delivered by [Dave Jones][DJ GitHub]. This was particularly good as you got hands-on with the code, with Dave leading the way to ensure everything worked. Here I have written a brief write up of the main points from the meetup and some of the SQL that we went through.
@@ -159,8 +160,6 @@ You can also see the [to_sql()][Pandas to_sql] method in Pandas. You have to be 
 One query I had during the meetup was how to save the data. Well, as I mentioned before, each transaction with the database saves everything to hard disk. Therefore, you should see a 'newdatabase.db' file in the directory you have been working in. Dave reassured us that these files are hard to corrupt or damage, which is handy given all the important data companies store in them.
 
 I hope that this post has helped some of you appreciate how easily you can get a database set up in SQL. I am looking to getting some more hands-on experience of it in the future. If you have any comments or corrections to this post then please [let me know][my email].
-
-Photo: Taken on Air New Zealand flight NZ001 over Washington, USA.
 
 [PyNW group]: https://www.meetup.com/Python-North-West-Meetup/
 [DJ GitHub]: https://github.com/waveform80/

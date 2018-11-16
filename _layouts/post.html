@@ -6,6 +6,9 @@ layout: main
     {% if page.img %}
     <div class="page-cover-image">
       <img class="page-image" src={{ "/assets/img/" | prepend: site.baseurl | append : page.img}} alt="{{page.title}}">
+    </div>
+    <div class="page-caption">
+      <p>{{page.caption}}</p>
     </div> <!-- End Page Cover Image -->
     {% else %}
     {% endif %}
