@@ -62,7 +62,7 @@ which should install any missing plugins.
 
 #### Modifying the theme and creating content
 
-Now you have the theme running you will want to make the site your own, for example changing details in the config and Gemfile files. To do more fundamental changes to the site you might want to edit the HTML or CSS files in the 'assets' and 'layouts' folders. In my case, I used the [flexible-jekyll][flexible-jekyll] theme, which by default doesn't have any links in the sidebar. To add the links in, I edited the 'main.html' file in the 'layouts' folder to include additional information in the sidebar.
+Now you have the theme running you will want to make the site your own, for example changing details in the config and Gemfile files. To do more fundamental changes to the site you might want to edit the HTML or CSS files in the 'assets' and 'layouts' folders. In my case, I used the [flexible-jekyll][flexible-jekyll] theme, which by default doesn't have any links in the sidebar. To add the links in, I edited the 'main.html' file in the 'layouts' folder to include additional information in the sidebar. Furthermore, I added a CSS class called "page-caption" which allowed me to print out a caption for each image at the top of each post.
 
 It might be a good idea to check out other themes and clone them as well, then you can start to build up an understanding of how different aspects of each theme are implemented. In this way you can start to make a site which is exactly as you like.
 
