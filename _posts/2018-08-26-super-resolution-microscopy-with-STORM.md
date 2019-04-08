@@ -36,7 +36,7 @@ However, the average time the dye spends in each state is different and the dye 
 
 The image below shows an example of what we might expect from the brightness of one pixel over time. The dye starts in the "dark" state (off) and then has two short periods in the "bright" state (on), where the intensity is over 100. The dye spends most of the time in the dark state and has low light intensity.
 
-<div style="text-align:center"><img src ="{{site.baseurl}}/assets/img/STORM/LocaTime.pdf"/></div>
+![Localisations over time]({{site.baseurl}}/assets/img/STORM/LocaTime.jpg){:class="img-responsive"}
 
 When the dye is blinking and we look at the sample in the microscope the whole display looks like the nights sky, except all the stars are constantly turning on and off.
 
@@ -55,7 +55,7 @@ By doing this we can find the position of each dye molecule in our sample with a
 
 This step is the "particle detection" part of the [STORM Eiffel Tower video][youtube-blinking].
 
-<div style="text-align:center"><img src ="{{site.baseurl}}/assets/img/STORM/STORMFit.pdf"/></div>
+![Fitting a localisation]({{site.baseurl}}/assets/img/STORM/STORMFit.png){:class="img-responsive"}
 
 As an example, I have fit the localisation above by taking the pixel values along the blue line in the image. The raw data is fit with a Gaussian profile and finds the location of the dye that created the blink with sub-pixel resolution, i.e. at pixel 6.25 with an error of 0.13 pixels. The pixels on the camera in our lab is equivalent to 130 nm so therefore the error is approximately 17 nm.
 
@@ -69,7 +69,7 @@ Other cleaning operations typically involve removing data points which have unph
 
 The final step is to form the final image, and typically this is done by generating a grid over our sample. Then we count how many localisations are in each square of the grid, this then becomes the brightness of the square. As shown in the "Reconstruction" part of the [STORM Eiffel Tower video][youtube-blinking].
 
-<div style="text-align:center"><img src ="{{site.baseurl}}/assets/img/STORM/StandardvsSTORM.pdf"/></div>
+![Standard resolution vs STORM comparison]({{site.baseurl}}/assets/img/STORM/StandardvsSTORM.jpg){:class="img-responsive"}
 
 Above is an image taken from one of my samples I use in my PhD, the synthetic peptide I<sub>3</sub>K, which forms long thin fibrils. As you can see the STORM image is much clearer and we can see what is going on in the images much better. Additionally, the background in the STORM images is almost zero, which is due to the specific nature of the fitting and post-processing which only allows localisations through which meet certain criteria.
 
