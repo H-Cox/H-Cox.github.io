@@ -1,23 +1,22 @@
-title: Henry Cox - Tech enthusiast and Biological Physics PhD student
+title: Henry Shine - Fun loving guy
 description: > # this means to ignore newlines until "baseurl:"
-  I am PhD student at the University of Manchester working on Biological Physics. 
-  This site contains blog posts about my projects in research, data science, machine learning and more...
+  Henry's website - wow!
 permalink: ':title/'
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://henrycox.co.uk" # the base hostname & protocol for your site, e.g. http://example.com
 site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
-author: Henry Cox # add your name
+author: Henry Shine # add your name
 author-img: Henry-Cox.jpg # add your photo
-about-author: I am PhD student at the University of Manchester working on Biological Physics. 
+about-author: A blog of things I like.
     
     # add description
-social-twitter: henryfcox # add your Twitter handle
+social-twitter:  # add your Twitter handle
 social-facebook: # add your Facebook handle
-social-github: h-cox # add your Github handle
-social-linkedin: henryfcox # add your Linkedin handle
-social-email: henryfcox@live.com # add your Email address
+social-github:  # add your Github handle
+social-linkedin:  # add your Linkedin handle
+social-email:  # add your Email address
 
 # Disqus
 discus-identifier: # add your discus identifier
