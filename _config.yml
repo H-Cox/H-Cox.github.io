@@ -8,7 +8,7 @@ site-twitter: #if your site has a twitter account, enter it here
 
 # Author Settings
 author: Henry Shine # add your name
-author-img: Henry-Cox.jpg # add your photo
+author-img: "Henry-Cox.jpg" #Henry-Cox.jpg # add your photo
 about-author: A blog of things I like.
     
     # add description
